@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto de Capacitores Multi-camada</title>
+        <link rel="stylesheet" type="text/css" href="capacitor.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="capacitor.js"></script>
+</head>
+
+<!-- Programa feito por André Paiva Rodrigues e Pedro Augusto em 22/07/2018 para a disciplina ENGA47 -  Tecnologia dos Materiais 
+    para a Engenharia Elétrica da UFBA, ministrada pelo professor Tiago Trindade Ribeiro -->
+
+<body>
+<div class="centro">
+<h1>Projeto de Capacitores Multi-camada</h1>
+<h2> Calcule a Capacitância total a partir das Constantes Dielétricas </h2>
+<label>Informe a área da superfície das camadas capacitor (somente números, em mm²)</label><br>
+<input type="text" id="areaCapacitor1">
+<br><br>
+
+<label>Informe a distância entre as camadas do capacitor (somente números, em mm)</label><br>
+<input type="text" id="distanciaCamadas1">
+<br><br>
+
+<label>Informe a Constante Dielétrica da Camada a ser adicionada (somente números)</label><br>
+<input type="text" id="constanteDieletrica"><br>
+<br><button id="botao" class="botao" onclick="adicionarCamada1()">Adicionar camada à lista</button>
+<br><br>
+
+<div id="tabela1" class="centro">
+    
+</div>
+
+<div id="resultado1" class="centro">
+
+</div>
+
+<br><br>
+<button id="botao" class="botao" onclick="calcular1()">Calcular</button>
+
+<br><br>
+
+<h2> OU</h2>
+<h2> Calcule a Constante Dielétrica de cada camada a partir da Capacitância da camada </h2>
+<label>Informe a área da superfície das camadas capacitor (somente números, em mm²)</label><br>
+<input type="text" id="areaCapacitor2">
+<br><br>
+
+<label>Informe a distância entre as camadas do capacitor (somente números, em mm)</label><br>
+<input type="text" id="distanciaCamadas2">
+<br><br>
+
+
+<label>Informe a Capacitância da Camada a ser adicionada (somente números, em μF)</label><br>
+<input type="text" id="capacitancia"><br>
+<br><button id="botao" class="botao" onclick="adicionarCamada2()">Adicionar camada à lista</button>
+<br><br>
+
+<div id="tabela2" class="centro">
+    
+</div>
+
+<div id="resultado2" class="centro">
+    
+</div>
+
+<br><br>
+<button id="botao" class="botao" onclick="calcular2()">Calcular</button>
+
+</body>
+</html>
